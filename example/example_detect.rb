@@ -1,5 +1,6 @@
 require 'dotenv'
 require 'language_detection'
+require 'language_detection/detect/detect_options'
 
 # Load Environment Variables
 Dotenv.load

@@ -2,7 +2,7 @@ require "language_detection/version"
 
 module LanguageLayer
 
-  class LanguagesException < Exception
+  class BatchException < Exception
 
     attr_accessor :error
 

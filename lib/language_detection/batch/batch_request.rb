@@ -2,7 +2,7 @@ require "hashable"
 
 module LanguageLayer
 
-  class DetectRequest
+  class BatchRequest
 
     include Hashable
 
