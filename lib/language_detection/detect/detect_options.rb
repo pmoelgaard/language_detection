@@ -10,6 +10,8 @@ module LanguageLayer
 
     attr_accessor :query
 
+    attr_accessor :show_query
+
 
     def initialize()
       @query = nil

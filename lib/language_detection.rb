@@ -1,3 +1,4 @@
+require "uri"
 require "httparty"
 require "hashable"
 require "language_detection/version"
@@ -46,7 +47,7 @@ module LanguageLayer
 
       # Populate the Query
       q.access_key = @access_key
-      q.query = query
+      q.query = URI.escape(query)
 
       # We then create the Request
       req = LanguageLayer::DetectRequest.new(q)
@@ -100,12 +101,12 @@ module LanguageLayer
       begin
 
         # We make the actual request
-        res = self.class.get('/batch', req_dto)
+        res = self.class.post('/batch', req_dto)
 
         # We ensure that we tap the response so we can use the results
         res.inspect
 
-        if (!res[LanguageLayer::BatchResponse::SUCCESS_EXPR])
+        if (res[LanguageLayer::BatchResponse::ERROR_EXPR])
           raise LanguageLayer::BatchException.new res[LanguageLayer::BatchResponse::ERROR_EXPR]
         end
 
@@ -142,7 +143,7 @@ module LanguageLayer
         # We ensure that we tap the response so we can use the results
         res.inspect
 
-        if (!res[LanguageLayer::LanguagesResponse::SUCCESS_EXPR])
+        if (res[LanguageLayer::LanguagesResponse::ERROR_EXPR])
           raise LanguageLayer::LanguagesException.new res[LanguageLayer::LanguagesResponse::ERROR_EXPR]
         end
 

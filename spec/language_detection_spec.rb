@@ -50,7 +50,9 @@ describe LanguageLayer do
 
       # Set the query to detect
       query = [
-          'I like apples & oranges.'
+          'Good afternoon, sir. How are you today?',
+          'Guten Tag mein Herr, wie geht es Ihnen?',
+          'Buenos días señor, cómo está hoy?'
       ]
 
       # We declare the options
@@ -61,6 +63,8 @@ describe LanguageLayer do
 
       # First we check the response
       expect(response).not_to be nil
+
+      expect(response['results'].length).to eq(query.length)
 
     rescue => e
       puts e.inspect

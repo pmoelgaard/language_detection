@@ -300,7 +300,7 @@ Stay up to date by following [@apilayernet](https://twitter.com/apilayernet) on 
 
 ## Legal
 
-All usage of the languagelayer website, API, and services is subject to the [pdflayer Terms & Conditions](https://pdflayer.com/terms) and all annexed legal documents and agreements.
+All usage of the languagelayer website, API, and services is subject to the [languagelayer Terms & Conditions](https://languagelayer.com/terms) and all annexed legal documents and agreements.
 
 ---
 
