@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Peter Andreas Moelgaard"]
   spec.email         = ["github@petermolgaard.com"]
 
-  spec.summary       = "Ruby Gem for languagelayer API Service, https://languagelayer.com/"
-  spec.description   = "Powerful Language Detection JSON API for Developers"
+  spec.description   = "Ruby Gem for languagelayer API Service, https://languagelayer.com/"
+  spec.summary       = "Powerful Language Detection JSON API for Developers"
   spec.homepage      = "https://github.com/pmoelgaard/language_detection"
   spec.license       = "MIT"
 

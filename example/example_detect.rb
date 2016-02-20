@@ -11,7 +11,7 @@ begin
   @client = LanguageLayer::Client.new(ENV['ACCESS_KEY'])
 
   # Set the email to check, we take a random email
-  query = 'I like apples & oranges.'
+  query = 'Good afternoon, sir. How are you today?'
 
   # We declare the options
   options = LanguageLayer::DetectOptions.new()
