@@ -2,7 +2,7 @@
 
 # languagedetection
 
-Ruby Library for the languagelayer API, a web service that email validation & verification, [https://mailboxlayer.com/](https://mailboxlayer.com/)   
+Ruby Library for the languagelayer API, powerful language detection, [https://languagelayer.com/](https://languagelayer.com/)   
 
 Offering a uniquely simple way to automate language detection using any programming language, accurate, efficient, and lightning fast.
 
